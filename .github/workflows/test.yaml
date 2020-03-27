@@ -10,6 +10,8 @@ jobs:
       run: echo "hello from actions"
     - name: test-docker
       run: docker ps -a
+    - name: Check out repository
+      uses: actions/checkout@v2
     - name: with-custom-image
       uses: ./.github/actions/with-python
 
