@@ -15,6 +15,7 @@ jobs:
     - name: with-custom-image
       uses: ./.github/actions/with-python
   another-job:
+    runs-on: ubuntu-latest
     container:
       image: python:3.8-slim
     steps:
