@@ -14,4 +14,9 @@ jobs:
       uses: actions/checkout@v2
     - name: with-custom-image
       uses: ./.github/actions/with-python
-
+  another-job:
+    container:
+      image: python:3.8-slim
+    steps:
+    - name: toto
+      run: python --version 
