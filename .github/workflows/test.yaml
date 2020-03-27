@@ -11,5 +11,5 @@ jobs:
     - name: test-docker
       run: docker ps -a
     - name: with-custom-image
-      uses: ./.github/actions/with-python@v2
+      uses: ./.github/actions/with-python
 
