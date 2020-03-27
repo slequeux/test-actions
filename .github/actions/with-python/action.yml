@@ -1,0 +1,5 @@
+name: 'Custom Docker'
+description: 'Python version from docker image'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
