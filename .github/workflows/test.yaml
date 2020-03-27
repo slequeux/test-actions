@@ -11,5 +11,5 @@ jobs:
     - name: test-docker
       run: docker ps -a
     - name: with-custom-image
-      uses: docker://python:3.8-slim
+      uses: ./.github/actions/with-python
       run: python --version
