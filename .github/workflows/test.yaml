@@ -10,3 +10,6 @@ jobs:
       run: echo "hello from actions"
     - name: test-docker
       run: docker ps -a
+    - name: with-custom-image
+      uses: docker://python:3.8-slim
+      run: python --version
