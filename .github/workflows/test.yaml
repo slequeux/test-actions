@@ -24,5 +24,7 @@ jobs:
   third-one:
     runs-on: ubuntu-latest
     steps:
+    - name: lqknds
+      run: ls -lrtah ./.github/actions/testing-content
     - name: testing things
       uses: ./.github/actions/testing-content
