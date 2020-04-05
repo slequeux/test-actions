@@ -20,4 +20,9 @@ jobs:
       image: python:3.8-slim
     steps:
     - name: toto
-      run: python --version 
+      run: python --version
+  third-one:
+    runs-on: ubuntu-latest
+    steps:
+    - name: testing things
+      uses: ./.github/actions/testing-content
